@@ -3,7 +3,7 @@ from django.shortcuts import render
 import simplejson as json
 
 def get_home_chart():
-    data_file = 'json/home.json'
+    data_file = './static/safer/json/home.json'
     with open(data_file) as f:
         data = json.load(f)
     return data
